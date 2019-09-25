@@ -1,10 +1,11 @@
 import React from 'react';
+import './Home.css';
 
 const Home = () => {
   return (
     <div id="home">
-      <div>
-        <p>Rachel's Portfolio!</p>
+      <div className="content">
+        <p>I'm Rachel</p>
       </div>
     </div>
   );

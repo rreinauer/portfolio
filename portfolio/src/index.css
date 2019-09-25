@@ -11,20 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#navbar {
-  background-color: paleturquoise;
-  max-height: 100%;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  opacity: 0.8 !important;
-  text-align: right !important;
-}
-#aboutme {
-  background-color: palegreen;
-  height: 100%;
-}
-#home {
-  background-color: palevioletred;
-  height: 100vh;
-}

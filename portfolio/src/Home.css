@@ -1,0 +1,7 @@
+#home {
+  height: 95vh;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
