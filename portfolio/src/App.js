@@ -9,8 +9,9 @@ import WorkMenu from './WorkMenu';
 
 function App() {
   const [show, setShow] = React.useState(false);
-  const showMenu = () => {
-    setShow(true);
+  const toggleMenu = () => {
+    let oldShow = show;
+    setShow(!show);
     console.log('show', show);
   };
   const hideMenu = () => {
@@ -19,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <div className="nav-stuff">
-        <NavBar showMenu={showMenu} />
+        <NavBar showMenu={toggleMenu} show={show} />
         <WorkMenu show={show} />
       </div>
       <div id="container">

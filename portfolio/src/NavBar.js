@@ -1,11 +1,15 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHorse, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHorse,
+  faChevronDown,
+  faChevronUp,
+} from '@fortawesome/free-solid-svg-icons';
 
 import './NavBar.css';
 
-const NavBar = ({ showMenu }) => {
+const NavBar = ({ showMenu, show }) => {
   return (
     <div id="navbar">
       <div id="nav-left">
@@ -14,7 +18,10 @@ const NavBar = ({ showMenu }) => {
         </Link>
         <Link className="nav-link" onClick={() => showMenu()}>
           WORK{' '}
-          <FontAwesomeIcon icon={faChevronDown} className="menu-icon-arrow" />
+          <FontAwesomeIcon
+            icon={show ? faChevronUp : faChevronDown}
+            className="menu-icon-arrow"
+          />
         </Link>
       </div>
 
