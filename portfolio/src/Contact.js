@@ -1,12 +1,25 @@
 import React from 'react';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   return (
-    <div id="contact">
-      <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+    <div id="contact-container">
+      <div id="contact">
+        <FontAwesomeIcon
+          className="contact-icon"
+          icon={faLinkedin}
+          size="2x"
+        ></FontAwesomeIcon>
+      </div>
+      <div id="contact">
+        <FontAwesomeIcon
+          className="contact-icon"
+          icon={faGithub}
+          size="2x"
+        ></FontAwesomeIcon>
+      </div>
     </div>
   );
 };

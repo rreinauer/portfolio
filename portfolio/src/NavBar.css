@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 0.5px solid rgb(146, 146, 146);
+  z-index: 200;
 }
 #nav-left {
   display: flex;
@@ -20,25 +22,34 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 20px;
+  color: rgb(146, 146, 146);
 }
 .nav-link {
   padding-left: 20px;
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: inherit;
-  color: black;
+  color: rgb(146, 146, 146);
 }
 .nav-link:hover {
-  color: grey;
+  color: orangered;
+}
+#logo {
+  background-image: url('./rr-logo.png');
+  background-size: cover;
+  height: 40px;
+  width: 55px;
+}
+#logo:hover {
+  background-image: url('./rr-logo-hover.png');
+  cursor: pointer;
 }
 .icon {
-  margin-left: 10px;
-  margin-right: 10px;
-  color: black;
+  color: orangered;
   transition: all 0.5s ease;
 }
 .icon:hover {
-  color: orangered;
+  color: rgb(146, 146, 146);
 }
 .menu-icon-arrow {
   margin-left: 8px;

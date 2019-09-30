@@ -14,7 +14,8 @@ const NavBar = ({ showMenu, show }) => {
     <div id="navbar">
       <div id="nav-left">
         <Link smooth to="#home">
-          <FontAwesomeIcon icon={faHorse} className="icon" size="2x" />
+          <div id="logo" className="icon" />
+          {/* <img src="rr-logo.png" className="icon" /> */}
         </Link>
         <Link className="nav-link" onClick={() => showMenu()}>
           WORK{' '}

@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import WorkMenu from './WorkMenu';
+import ScavengARt from './ScavengARt';
 
 function App() {
   const [show, setShow] = React.useState(false);
@@ -26,6 +27,7 @@ function App() {
       <div id="container">
         <Home />
         <AboutMe />
+        <ScavengARt />
         <Contact />
       </div>
     </div>

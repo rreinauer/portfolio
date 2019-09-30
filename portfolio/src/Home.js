@@ -4,9 +4,7 @@ import './Home.css';
 const Home = () => {
   return (
     <div id="home">
-      <div className="content">
-        <p>I'm Rachel</p>
-      </div>
+      <div className="content"></div>
     </div>
   );
 };

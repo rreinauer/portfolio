@@ -1,4 +1,12 @@
 #about-me {
   height: 50vh;
-  background-color: palegreen;
+  background-color: rgb(247, 247, 247);
+  color: rgb(38, 54, 69);
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.content {
+  padding: 40px 0px;
 }

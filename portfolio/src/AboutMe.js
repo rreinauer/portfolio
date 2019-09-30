@@ -3,8 +3,9 @@ import './AboutMe.css';
 const AboutMe = () => {
   return (
     <div id="about-me">
-      <div>
-        <p>About Me</p>
+      <div className="content">
+        <span className="title">Hi, I'm Rachel</span>
+        <p className="content-text">I'm a software engineer.</p>
       </div>
     </div>
   );

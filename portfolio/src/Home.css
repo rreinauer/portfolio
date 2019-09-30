@@ -1,6 +1,8 @@
 #home {
-  height: 95vh;
-  background-color: palevioletred;
+  height: 60vh;
+  background-image: url('brooklyn-brige.jpeg');
+  background-size: cover;
+  background-position-y: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
