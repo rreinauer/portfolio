@@ -6,7 +6,8 @@ import NavBar from './NavBar';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import WorkMenu from './WorkMenu';
-import ScavengARt from './ScavengARt';
+import TechStack from './TechStack';
+import NavMenu from './NavMenu';
 
 function App() {
   const [show, setShow] = React.useState(false);
@@ -15,19 +16,18 @@ function App() {
     setShow(!show);
     console.log('show', show);
   };
-  const hideMenu = () => {
-    setShow(false);
-  };
+
   return (
     <div className="App">
       <div className="nav-stuff">
         <NavBar showMenu={toggleMenu} show={show} />
-        <WorkMenu show={show} />
+        <NavMenu show={show} />
       </div>
       <div id="container">
         <Home />
         <AboutMe />
-        <ScavengARt />
+        <WorkMenu show={show} />
+        <TechStack />
         <Contact />
       </div>
     </div>

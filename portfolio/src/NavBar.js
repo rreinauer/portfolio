@@ -2,7 +2,7 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faHorse,
+  faBars,
   faChevronDown,
   faChevronUp,
 } from '@fortawesome/free-solid-svg-icons';
@@ -17,21 +17,25 @@ const NavBar = ({ showMenu, show }) => {
           <div id="logo" className="icon" />
           {/* <img src="rr-logo.png" className="icon" /> */}
         </Link>
-        <Link className="nav-link" onClick={() => showMenu()}>
-          WORK{' '}
-          <FontAwesomeIcon
-            icon={show ? faChevronUp : faChevronDown}
-            className="menu-icon-arrow"
-          />
-        </Link>
       </div>
 
       <div id="nav-links">
+        <div id="nav-select">
+          <FontAwesomeIcon icon={faBars} onClick={() => showMenu()} />
+        </div>
         <Link smooth to="#about-me" className="nav-link">
           ABOUT ME
         </Link>
+        <Link smooth to="#about-me" className="nav-link">
+          WORK
+        </Link>
+        <Link smooth to="#techstack-container" className="nav-link">
+          TECH STACK
+        </Link>
 
-        <Link className="nav-link">CONTACT</Link>
+        <Link smooth to="#contact-container" className="nav-link">
+          CONTACT
+        </Link>
       </div>
     </div>
   );

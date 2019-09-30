@@ -1,0 +1,17 @@
+#techstack-container {
+  height: 40vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+}
+
+#techstack {
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#techstack-title {
+  padding-top: 25px;
+}
