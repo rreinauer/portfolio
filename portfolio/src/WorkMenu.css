@@ -1,0 +1,12 @@
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+#work-menu-container {
+  width: 100vw;
+  height: 25%;
+  background-color: white;
+}
